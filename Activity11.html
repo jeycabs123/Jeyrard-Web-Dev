@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #eaeaea;
+        padding: 0px;
+        margin: 0;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .loopdiv {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px #000000;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      .outp {
+        margin-top: 15px;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loopdiv">
+        <h2>For Loop</h2>
+        <input type="number" id="forCount" placeholder="Count" />
+        <textarea id="forText" placeholder="Message"></textarea>
+        <button onclick="runFor()">Show</button>
+        <button class="clear" onclick="clearDiv('forList')">Clear</button>
+        <div class="outp">
+          <ol id="forList"></ol>
+        </div>
+      </div>
+
+      <div class="loopdiv">
+        <h2>While Loop</h2>
+        <input type="number" id="whileCount" placeholder="Count" />
+        <textarea id="whileText" placeholder="Message"></textarea>
+        <button onclick="runWhile()">Show</button>
+        <button class="clear" onclick="clearDiv('whileList')">Clear</button>
+        <div class="outp">
+          <ol id="whileList"></ol>
+        </div>
+      </div>
+
+      <div class="loopdiv">
+        <h2>Do While Loop</h2>
+        <input type="number" id="doWhileCount" placeholder="Count" />
+        <textarea id="doWhileText" placeholder="Message"></textarea>
+        <button onclick="runDoWhile()">Show</button>
+        <button class="clear" onclick="clearDiv('doWhileList')">Clear</button>
+        <div class="outp">
+          <ol id="doWhileList"></ol>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function runFor() {
+        // vars
+        const count = parseInt(document.getElementById("forCount").value);
+        const text = document.getElementById("forText").value;
+        const list = document.getElementById("forList");
+        list.innerHTML = "";
+        // loop
+        for (let i = 0; i < count; i++) {
+          const li = document.createElement("li");
+          li.textContent = text;
+          list.appendChild(li);
+        }
+      }
+
+      function runWhile() {
+        // vars
+        const count = parseInt(document.getElementById("whileCount").value);
+        const text = document.getElementById("whileText").value;
+        const list = document.getElementById("whileList");
+        list.innerHTML = "";
+
+        // lop
+        let i = 0;
+        while (i < count) {
+          const li = document.createElement("li");
+          li.textContent = text;
+          list.appendChild(li);
+          i++;
+        }
+      }
+
+      function runDoWhile() {
+        // vars
+        const count = parseInt(document.getElementById("doWhileCount").value);
+        const text = document.getElementById("doWhileText").value;
+        const list = document.getElementById("doWhileList");
+        list.innerHTML = "";
+
+        // loop
+        let i = 0;
+        if (count > 0) {
+          do {
+            const li = document.createElement("li");
+            li.textContent = text;
+            list.appendChild(li);
+            i++;
+          } while (i < count);
+        }
+      }
+
+      function clearDiv(id) {
+        document.getElementById(id).innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
