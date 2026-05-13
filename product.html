@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { 
+            background: transparent; 
+            font-family: 'Segoe UI', sans-serif; 
+            padding: 10px;
+            margin: 0;
+        }
+
+        .menu-title {
+            font-family: 'Metal Mania', cursive;
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .guitar-grid { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px; 
+        }
+
+     
+        
+        .card-img { 
+            width: 100%; 
+            height: 180px;
+            background-size: cover; 
+            background-position: center;
+            background-color: #333;
+        }
+
+        .card-info { 
+            padding: 15px; 
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-info h3 { 
+            margin: 0 0 8px 0; 
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .card-info p { 
+            font-size: 0.85rem; 
+            color: #ffffff;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .price {
+            color: #cc0000;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .order-btn {
+            background: #0d2618;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="menu-title">Our Shred Collection</h2>
+
+    <div class="guitar-grid">
+        <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/main_f82d2f8b.webp');"></div>
+            <div class="card-info">
+                <h3>B.C. Rich Warlock</h3>
+                <p>Aggressive body shape with high-output humbuckers.</p>
+                <div class="card-footer">
+                    <span class="price">80,000 peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/preview.jpg');"></div>
+            <div class="card-info">
+                <h3>Dimebag Stealth</h3>
+                <p>The ultimate weapon for heavy riffs and fast solos.</p>
+                <div class="card-footer">
+                    <span class="price">129,000 peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/ibanez.jpg');"></div>
+            <div class="card-info">
+                <h3>Ibanez RG Series</h3>
+                <p>Ultra-thin Wizard neck for lightning-fast playing.</p>
+                <div class="card-footer">
+                    <span class="price">100,000 Peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/original.webp');"></div>
+            <div class="card-info">
+                <h3>ESP</h3>
+                <p>kag kag kag!</p>
+                <div class="card-footer">
+                    <span class="price">110,000 Peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/Jackson-JS-22-RR-HT.jpg');"></div>
+            <div class="card-info">
+                <h3>Jackson</h3>
+                <p>Famous metal guitars.</p>
+                <div class="card-footer">
+                    <span class="price">79,000 peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="promo-grid">
+        <div class="guitar-card">
+            <div class="card-img" style="background-image: url('images/Schecter_BLOG_22_900x (1).webp');"></div>
+            <div class="card-info">
+                <h3>Schecter</h3>
+                <p>CHUG CHUG CHUG!.</p>
+                <div class="card-footer">
+                    <span class="price">50,000 peso</span>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

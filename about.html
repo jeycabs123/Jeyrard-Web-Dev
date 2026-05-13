@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { 
+            background: transparent; 
+            font-family: 'Segoe UI', sans-serif; 
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .about-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            background: #111111;
+            border: 1px solid #333;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px-50px rgba(0,0,0,0.8);
+        }
+
+    
+        .image-side {
+            flex: 1;
+            min-height: 500px;
+            background-image: url('images/be5d954c-135a-44d4-b3ba-11a8dbbeb336.jpg');
+            background-size: cover;
+            background-position: center;
+            border-right: 4px solid #000000;
+        }
+
+     
+        .content-side {
+            flex: 1.2;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-side h2 {
+            font-family: 'Metal Mania', cursive;
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .content-side h3 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.2rem;
+            color: #af2d2d;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .content-side p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .quality-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: #222;
+            border: 1px solid #ff0000;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+       
+        @media (max-width: 768px) {
+            .about-wrapper { flex-direction: column; }
+            .image-side { min-height: 300px; border-right: none; border-bottom: 4px solid #ff0000; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-wrapper">
+        <div class="image-side"></div>
+        
+        <div class="content-side">
+            <h2>Our Story</h2>
+            <h3>Built by Shredders, for Shredders</h3>
+            
+            <p>
+                At ShredZone Guitars, we don't just sell instruments, we live for the stage. 
+                Our founder started this journey with one mission. to ensure every guitarist has access 
+                to gear that stays in tune, feels fast, and sounds lethal.
+            </p>
+
+            <p>
+                Every guitar in our shop is personally inspected and set up. We check the action, 
+                intonation, and electronics so that your "New Guitar Day" is perfect from the 
+                first power chord.
+            </p>
+
+            
+    </div>
+
+</body>
+</html>

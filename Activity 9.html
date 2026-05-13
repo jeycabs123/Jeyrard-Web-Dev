@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Alert Design</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            overflow:hidden;
+        }
+
+        /* Floating circles background */
+        .circle{
+            position:absolute;
+            border-radius:50%;
+            background:rgba(255,255,255,0.08);
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1){
+            width:150px;
+            height:150px;
+            top:10%;
+            left:15%;
+        }
+
+        .circle:nth-child(2){
+            width:250px;
+            height:250px;
+            bottom:5%;
+            right:10%;
+            animation-duration:8s;
+        }
+
+        .circle:nth-child(3){
+            width:100px;
+            height:100px;
+            top:60%;
+            left:5%;
+            animation-duration:5s;
+        }
+
+        @keyframes float{
+            0%,100%{
+                transform:translateY(0px);
+            }
+            50%{
+                transform:translateY(-20px);
+            }
+        }
+
+        .container{
+            position:relative;
+            width:380px;
+            padding:40px;
+            border-radius:25px;
+            text-align:center;
+            background:rgba(255,255,255,0.12);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,0.2);
+            box-shadow:0 8px 32px rgba(0,0,0,0.3);
+            color:white;
+            animation: pop 1s ease;
+        }
+
+        @keyframes pop{
+            from{
+                transform:scale(0.7);
+                opacity:0;
+            }
+            to{
+                transform:scale(1);
+                opacity:1;
+            }
+        }
+
+        .icon{
+            font-size:70px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            font-size:32px;
+            margin-bottom:10px;
+        }
+
+        p{
+            font-size:15px;
+            color:#f1f1f1;
+            margin-bottom:30px;
+            line-height:1.5;
+        }
+
+        button{
+            padding:14px 35px;
+            border:none;
+            border-radius:50px;
+            background:white;
+            color:#203a43;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s ease;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        button:hover{
+            transform:translateY(-5px) scale(1.05);
+            background:#00c6ff;
+            color:white;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            let name = "MJ";
+            alert("✨ Hi " + name + "! Welcome to the JavaScript Alert Box ✨");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Background circles -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="container">
+        <div class="icon">🔔</div>
+
+        <h2>JavaScript Alert</h2>
+
+        <p>
+            Press the button below to display a stylish JavaScript alert message.
+        </p>
+
+        <button onclick="myFunction()">
+            Click Me
+        </button>
+    </div>
+
+</body>
+</html>

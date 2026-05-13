@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            overflow:hidden;
+        }
+
+        .card{
+            width:420px;
+            padding:40px;
+            border-radius:25px;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
+            border:1px solid rgba(255,255,255,0.2);
+            color:white;
+            text-align:center;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(-20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .profile{
+            width:110px;
+            height:110px;
+            margin:auto;
+            margin-bottom:20px;
+            border-radius:50%;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:45px;
+            font-weight:bold;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        h2{
+            font-size:32px;
+            margin-bottom:10px;
+            color:#ffd369;
+        }
+
+        .name{
+            font-size:28px;
+            font-weight:bold;
+            color:#ffffff;
+            margin-bottom:15px;
+            text-transform:uppercase;
+            letter-spacing:1px;
+        }
+
+        .info{
+            font-size:16px;
+            line-height:1.8;
+            color:#f1f1f1;
+            margin-bottom:10px;
+        }
+
+        .highlight{
+            color:#ffd369;
+            font-weight:bold;
+        }
+
+        .footer{
+            margin-top:20px;
+            font-size:14px;
+            color:#dcdcdc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="profile">
+            J
+        </div>
+
+        <h2>Website Development</h2>
+
+        <div class="name">
+            Jeyrard Jeywensim Cabatino
+        </div>
+
+        <p class="info">
+            <span class="highlight">Age:</span> 19 years old
+        </p>
+
+        <p class="info">
+            <span class="highlight">Location:</span> Minglanilla Municipality
+        </p>
+
+        <p class="info">
+            <span class="highlight">Hobbies:</span><br>
+            Playing online games 🎮<br>
+            Cooking 🍳<br>
+            Playing instruments 🎸
+        </p>
+
+        <p class="info">
+            <span class="highlight">Favorite Number:</span> 8
+        </p>
+
+        <p class="info">
+            <span class="highlight">Favorite Color:</span> Black 🖤
+        </p>
+
+        <div class="footer">
+            ✨ Simple Personal Profile Design ✨
+        </div>
+
+    </div>
+
+</body>
+
+</html>
